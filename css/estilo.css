@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src:  url("../fonts/Bubblegum.ttf");
+}
 body {
     background-color:#d3cdcd;
     color: rgba(0,0,0,1);
@@ -23,12 +27,31 @@ p {
 
 header#cabecalho img#icone {
     position: absolute; /*Posição absoluta,*/
-    left: 1100px;
+    left: 1080px;
     top: 30px;
+    padding: 15px;
 }
 
-header #cabecalho {
+header#cabecalho {
+    border-bottom: 1px #606060 solid; /*Linha da borda, Border bottom que é a borda debaixo, 1px que é a largura empx, cor da borda #606060, formato da borda Solid*/
+    height: 150px; /*Altura do cabeçalho*/ 
+    background: url("../img/iconeGoogleGlassLetra1.png")  no-repeat -42px 10px; 
+}
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 45px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.6);
+    padding: 4 px;
+    margin-bottom: 0px;
+}
 
+header#cabecalho h2{
+    font-family:  'Titillium Web', sans-serif;;
+    color: #888888;
+    font-size: 18pt;
+    padding: 0px;
+    margin-top: 0px;
 }
 
            /*Formatação de imagens com legenda*/
@@ -76,7 +99,7 @@ nav#menu ul{
     text-transform: uppercase; /*Colocar as Letras do Menus Todas MAIUSCULAS */
     position: absolute;  /*Posição Absoluta ela poder ser modificada - dentro do site todo, podendo colocar em qualquer posição dentro do site*/
     top:-10px; 
-    left: 700px;
+    left: 670px;
    /*Posicação relativa so pode ser modificada - ela so poderá ser movida dentro do seu container*/
    /*Posição Absoluta ela poder ser modificada - dentro do site todo, podendo colocar em qualquer posição dentro do site*/
 }
@@ -109,4 +132,27 @@ nav#menu a {
 nav#menu a:hover { /*Pro texto mudar de cor quando o mouse passar por cima comando {Hover}*/
     color: #ffffff;
     text-decoration: underline; /*Pra quando passar o mouse por cima dos menus aparecer o Anderline*/
+}
+
+section#corpo {
+    display: block; /*Pra ele ser mostrada como bloco*/
+    width: 720px; /*Largura da Section idCorpo*/
+    float: left; /*Conteudo da Section#Corpo flutuar pro Lado Esquerdo*/
+    border-right: 1px solid #606060; /*Pra criar borda do lado direito Border-Right, primeiro parametro, largura de 1px,linha que teremos que ser solid, cor da linha #606060*/
+    padding-right: 15px; /*Pra da espaçamento no lado direito, do texto para bordar*/
+}
+
+aside#lateral { /*lado direito*/
+    display: block;/*Pra ele ser mostrada como bloco*/
+    width: 450px; /*Largura do Aside idLateral*/
+    float: right; /*Conteudo da Aside#Lateral flutuar pro Lado Direito*/
+
+    /*PRA PODER FLUTUAR UM OBJETO ELES TEM QUE ESTAREM CONFIGURADOS PARA ESTADO DE BLCO "DISPLAY:BOCK" ASSIM PODE SER ASSIONADO O MODO Float*/
+}
+footer#rodape {
+    clear: both; /*Como tenho dois conteudo flutuando que é o Corpo e a Lateral ASIDE o Footer tem que limpar a flutuação assim assionando o clear both. [Pra fazer o rodapé ser mostrado fora da seção lateral e corpo}*/
+    border-top: 1px solid #606060; /*Borda no rodapé Border-Top linha em cima, com largura de 1px, tipo da linha da borda será solida, cor da linha #606060*/
+}
+footer#rodape p{
+    text-align: center;
 }
