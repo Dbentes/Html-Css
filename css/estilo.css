@@ -1,25 +1,50 @@
 @charset "UTF-8";
+
 body {
-    background-color: white;
+    background-color:#d3cdcd;
     color: rgba(0,0,0,1);
 }
-p{
+
+            /*Conteudo da Interface fica restrito como se fosse (==) apenas para direita da pagina*/
+
+div#interface{
+    width: 1200px; /*Pra limitar a Largura da interface "Container" */
+    background-color: white;
+    margin: -20px auto 0px auto; /*-20pxCima, autoDireita, 10pxBaixo, autoEsquerda*/
+    box-shadow: 0px 0px 10px black; /*sombra em volta do objeto interface (Deslocamento lateral 0px, Deslocamento Vertical 0px, Espalhamento da sombra de 10px, cor da sombra black*/
+    padding: 10px 10px; /*Pra dá espaçamento do texto nos cantos das bordas da interface, 10px Cima, 10px Direita, 10px Baixo, 10px Esquerda*/
+
+}
+
+p {
     text-align: justify; /*Justificar Texto*/
     text-indent: 50px; /*Dá um espaçamento no paragrafo pro texto*/
+}
+
+header#cabecalho img#icone {
+    position: absolute; /*Posição absoluta,*/
+    left: 1100px;
+    top: 30px;
+}
+
+header #cabecalho {
+
 }
 
            /*Formatação de imagens com legenda*/
 
 
 figure.foto-legenda {
-    position: relative;
+    position: relative;  /*Posicação relativa so pode ser modificada - ela so poderá ser movida dentro do seu container*/
     border: 8px solid white; /*Bordar, tamanho da borda, tipo solida, Cor Branco*/
     box-shadow: 1px 1px 4px black; /*Sombra, deslocamento horizontal e vertical */
 }
+
 figure.foto-legenda img {
     width: 100%; /*Largura*/
     height: 100%; /*Altura*/
 }
+
 figure.foto-legenda figcaption {
     opacity: 0;/*Pra fazer com que a legenda suma*/
     position: absolute; /*Borda Branca posicção absoluta dentro do seu container*/
@@ -33,6 +58,7 @@ figure.foto-legenda figcaption {
     transition: opacity 1s; /*Tempo que leva pra legenda sair e aparecer*/
    
 }
+
 figure.foto-legenda:hover figcaption { /*Pra Fazer com que quando passar o mouse por cima da imagem apareça a legenda*/
     opacity: 1;
 }
@@ -44,24 +70,43 @@ figure.foto-legenda:hover figcaption { /*Pra Fazer com que quando passar o mouse
 nav#menu { 
     display: block; /*pra fazer o menu flutuar colocar o menu em bloco*/
 }
+
 nav#menu ul{
     list-style: none; /*Sumir com os marcadores do UL*/
     text-transform: uppercase; /*Colocar as Letras do Menus Todas MAIUSCULAS */
-    position: absolute;  
+    position: absolute;  /*Posição Absoluta ela poder ser modificada - dentro do site todo, podendo colocar em qualquer posição dentro do site*/
     top:-10px; 
     left: 700px;
    /*Posicação relativa so pode ser modificada - ela so poderá ser movida dentro do seu container*/
    /*Posição Absoluta ela poder ser modificada - dentro do site todo, podendo colocar em qualquer posição dentro do site*/
 }
+
 nav#menu li {
     display: inline-block; /*Menu na mesma LINHA*/
     background-color:#dddddd; /*Cor do fundo dos menus*/
-    padding: 10px; /*Espaço dentro do menu*/
+    padding: 6px; /*Espaço dentro do menu*/
     margin: 2px; /*Espaço fora do Menu*/
+    -webkit-transition: background-color 1s; /*Comando pro navegador Safare*/
+    -moz-transition:background-color 1s; /*Comando pro navegador Moxila Firefox*/
+    -o-transition: background-color 1s; /*Comando pro navegador Operara */
+    -ms-transition: background-color 1s;/*Comando pro navegador Da Microsoft*/
+    transition: background-color 1s; /*Comando pra navegadores Atualizados*/ 
 }
-nav#menu li :hover { /*Quando se passar o mouse por cima Hover*/ {
-    
+
+nav#menu li :hover { /*Quando se passar o mouse por cima {Hover} irá modifiacar*/ 
+    background-color: #968888;
 }
+
 nav#menu h1 {
     display: none; /*Escondendo o H1 o MENU PRINCIPAL Escrita*/
+}
+
+nav#menu a {
+    color: #000000; /*Cor da Letra*/
+    text-decoration: none; /*Pra tirar o sublinhado dos Menus*/
+}
+
+nav#menu a:hover { /*Pro texto mudar de cor quando o mouse passar por cima comando {Hover}*/
+    color: #ffffff;
+    text-decoration: underline; /*Pra quando passar o mouse por cima dos menus aparecer o Anderline*/
 }
