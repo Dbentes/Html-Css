@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -7,6 +8,12 @@
     <title>DB-Tudo Sobre GOOGLE Glass</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
+<script>
+    function mudaFoto (foto)
+    {
+        document.getElementById ("icone").src = foto;
+    }
+</script>
 
 <body>
     <div id="interface">
@@ -21,7 +28,7 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li onmousemove="mudaFoto('img/home1.png')" onmouseout="mudaFoto('img/foto_google_glass_pequena.png')" ><a href="index.html">Home</a></li>
                     <li><a href="especificacoes.html">Especificações</a></li>
                     <li><a href="fotos.html">Fotos</a></li>
                     <li><a href="multimidia.html">Multimidia</a></li>
@@ -29,3 +36,6 @@
                 </ul>
             </nav>
         </header>
+    </div>
+</body>
+</html>
