@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src:  url("../fonts/Bubblegum.ttf");
+}
+body {
+    background-color:#d3cdcd;
+    color: rgba(0,0,0,1);
+}
+
+            /*Conteudo da Interface fica restrito como se fosse (==) apenas para direita da pagina*/
+
+div#interface{
+    width: 1200px; /*Pra limitar a Largura da interface "Container" */
+    background-color: white;
+    margin: -20px auto 0px auto; /*-20pxCima, autoDireita, 10pxBaixo, autoEsquerda*/
+    box-shadow: 0px 0px 10px black; /*sombra em volta do objeto interface (Deslocamento lateral 0px, Deslocamento Vertical 0px, Espalhamento da sombra de 10px, cor da sombra black*/
+    padding: 10px 10px; /*Pra dá espaçamento do texto nos cantos das bordas da interface, 10px Cima, 10px Direita, 10px Baixo, 10px Esquerda*/
+
+}
+
+p {
+    text-align: justify; /*Justificar Texto*/
+    text-indent: 50px; /*Dá um espaçamento no paragrafo pro texto*/
+}
+
+header#cabecalho img#icone {
+    position: absolute; /*Posição absoluta,*/
+    left: 1080px;
+    top: 30px;
+    padding: 15px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid; /*Linha da borda, Border bottom que é a borda debaixo, 1px que é a largura empx, cor da borda #606060, formato da borda Solid*/
+    height: 150px; /*Altura do cabeçalho*/ 
+    background: url("../img/iconeGoogleGlassLetra1.png")  no-repeat -42px 10px; 
+}
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 45px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.6);
+    padding: 4 px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family:  'Titillium Web', sans-serif;;
+    color: #888888;
+    font-size: 18pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+           /*Formatação de imagens com legenda*/
+
+
+figure.foto-legenda {
+    position: relative;  /*Posicação relativa so pode ser modificada - ela so poderá ser movida dentro do seu container*/
+    border: 8px solid white; /*Bordar, tamanho da borda, tipo solida, Cor Branco*/
+    box-shadow: 1px 1px 4px black; /*Sombra, deslocamento horizontal e vertical */
+}
+
+figure.foto-legenda img {
+    width: 100%; /*Largura*/
+    height: 100%; /*Altura*/
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;/*Pra fazer com que a legenda suma*/
+    position: absolute; /*Borda Branca posicção absoluta dentro do seu container*/
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white; /*Letra branca*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s; /*Tempo que leva pra legenda sair e aparecer*/
+   
+}
+
+figure.foto-legenda:hover figcaption { /*Pra Fazer com que quando passar o mouse por cima da imagem apareça a legenda*/
+    opacity: 1;
+}
+
+
+
+                  /*Formatação do MENU*/
+
+nav#menu { 
+    display: block; /*pra fazer o menu flutuar colocar o menu em bloco*/
+}
+
+nav#menu ul{
+    list-style: none; /*Sumir com os marcadores do UL*/
+    text-transform: uppercase; /*Colocar as Letras do Menus Todas MAIUSCULAS */
+    position: absolute;  /*Posição Absoluta ela poder ser modificada - dentro do site todo, podendo colocar em qualquer posição dentro do site*/
+    top:-10px; 
+    left: 670px;
+   /*Posicação relativa so pode ser modificada - ela so poderá ser movida dentro do seu container*/
+   /*Posição Absoluta ela poder ser modificada - dentro do site todo, podendo colocar em qualquer posição dentro do site*/
+}
+
+nav#menu li {
+    display: inline-block; /*Menu na mesma LINHA*/
+    background-color:#dddddd; /*Cor do fundo dos menus*/
+    padding: 6px; /*Espaço dentro do menu*/
+    margin: 2px; /*Espaço fora do Menu*/
+    -webkit-transition: background-color 1s; /*Comando pro navegador Safare*/
+    -moz-transition:background-color 1s; /*Comando pro navegador Moxila Firefox*/
+    -o-transition: background-color 1s; /*Comando pro navegador Operara */
+    -ms-transition: background-color 1s;/*Comando pro navegador Da Microsoft*/
+    transition: background-color 1s; /*Comando pra navegadores Atualizados*/ 
+}
+
+nav#menu li :hover { /*Quando se passar o mouse por cima {Hover} irá modifiacar*/ 
+    background-color: #968888;
+}
+
+nav#menu h1 {
+    display: none; /*Escondendo o H1 o MENU PRINCIPAL Escrita*/
+}
+
+nav#menu a {
+    color: #000000; /*Cor da Letra*/
+    text-decoration: none; /*Pra tirar o sublinhado dos Menus*/
+}
+
+nav#menu a:hover { /*Pro texto mudar de cor quando o mouse passar por cima comando {Hover}*/
+    color: #ffffff;
+    text-decoration: underline; /*Pra quando passar o mouse por cima dos menus aparecer o Anderline*/
+}
+
+section#corpo {
+    display: block; /*Pra ele ser mostrada como bloco*/
+    width: 720px; /*Largura da Section idCorpo*/
+    float: left; /*Conteudo da Section#Corpo flutuar pro Lado Esquerdo*/
+    border-right: 1px solid #606060; /*Pra criar borda do lado direito Border-Right, primeiro parametro, largura de 1px,linha que teremos que ser solid, cor da linha #606060*/
+    padding-right: 15px; /*Pra da espaçamento no lado direito, do texto para bordar*/
+}
+
+aside#lateral { /*lado direito*/
+    display: block;/*Pra ele ser mostrada como bloco*/
+    width: 450px; /*Largura do Aside idLateral*/
+    float: right; /*Conteudo da Aside#Lateral flutuar pro Lado Direito*/
+
+    /*PRA PODER FLUTUAR UM OBJETO ELES TEM QUE ESTAREM CONFIGURADOS PARA ESTADO DE BLCO "DISPLAY:BOCK" ASSIM PODE SER ASSIONADO O MODO Float*/
+}
+footer#rodape {
+    clear: both; /*Como tenho dois conteudo flutuando que é o Corpo e a Lateral ASIDE o Footer tem que limpar a flutuação assim assionando o clear both. [Pra fazer o rodapé ser mostrado fora da seção lateral e corpo}*/
+    border-top: 1px solid #606060; /*Borda no rodapé Border-Top linha em cima, com largura de 1px, tipo da linha da borda será solida, cor da linha #606060*/
+}
+footer#rodape p{
+    text-align: center;
+}
