@@ -7,13 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DB-Tudo Sobre GOOGLE Glass</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="css/specs.css">
 </head>
-<script>
-    function mudaFoto (foto)
-    {
-        document.getElementById ("icone").src = foto;
-    }
-</script>
+<script language="javaScript" src="javaScript/funcoes.js"></script>
 
 <body>
     <div id="interface">
@@ -24,18 +20,63 @@
                 <h2> A revolução do Google está chegando </h2>
             </hgroup>
 
-            <img id="icone" src="img/foto_google_glass_pequena.png" width="180" height="120" />
+            <img id="icone" src="img/glass-oculos-preto-peq.png" width="180" height="120" />
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li onmousemove="mudaFoto('img/home1.png')" onmouseout="mudaFoto('img/foto_google_glass_pequena.png')" ><a href="index.html">Home</a></li>
-                    <li><a href="especificacoes.html">Especificações</a></li>
-                    <li><a href="fotos.html">Fotos</a></li>
-                    <li><a href="multimidia.html">Multimidia</a></li>
-                    <li><a href="faleConosco.html">Fale com a gente</a></li>
+                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/especificacoes.png')"><a
+                            href="index.html">Home</a></li>
+                    <li onmousemove="mudaFoto('img/especificacoes.png')"
+                        onmouseout="mudaFoto('img/especificacoes.png')"><a href="especificacoes.html">Especificações</a>
+                    </li>
+                    <li onmousemove="mudaFoto ('img/fotos.png')" onmouseout="mudaFoto('img/especificacoes.png')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmousemove="mudaFoto('img/multimidia.pnge')" onmouseout="mudaFoto('img/especificacoes.png')"><a
+                            href="multimidia.html">Multimidia</a></li>
+                    <li onmousemove="mudaFoto('img/faleconosco.png')" onmouseout="mudaFoto('img/especificacoes.png')"><a
+                            href="faleConosco.html">Fale com a gente</a></li>
                 </ul>
             </nav>
         </header>
+        <section id="corpoFull ">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Especificações</h3>
+                        <h1>Raio-X no Google Glass</h1>
+                        <h2>por Diego Bentes</h2>
+                        <h3 class="direita">Atualizado em 16/agosto/2019</h3>
+                    </hgroup>
+                </header>
+                
+             
+
+                <p>Clique em qualquer área destacada para ter mais informações sobre os recursos do Google Glass. Qualquer
+                ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                
+                <section id="conteudo">
+                    <img src="img//glass-esquema-marcado.jpg"usemap="#meumapa"/>
+                    <map name="meumapa">
+                        <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela" />
+                        <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela"/>
+                        <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela"/>
+                        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela"/>
+                    </map>
+                    <iframe src="google-glass.html" name="janela" id="frame-spec"scrolling="no"></iframe>
+                </section>
+
+                </article>
+        </section>
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2019 - by Diego Bentes <br>
+                <a href="https://pt-br.facebook.com/googleglassapp/" target="blank">Facebook</a>
+                <!-- Target serve pra fazer os link abrir em outra pagina da web, não na mesma --> |
+                <a href="https://twitter.com/withgoogleglass?lang=pt" target="blank">Twitter</a> </p>
+            <!-- Target serve pra fazer os link abrir em outra pagina da web, não na mesma -->
+        </footer>
+
     </div>
 </body>
+
 </html>
