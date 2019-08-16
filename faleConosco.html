@@ -8,12 +8,7 @@
     <title>DB-Tudo Sobre GOOGLE Glass</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
-<script>
-    function mudaFoto (foto)
-    {
-        document.getElementById ("icone").src = foto;
-    }
-</script>
+<script language="javaScript" src="javaScript/funcoes.js"></script> 
 
 <body>
     <div id="interface">
@@ -24,18 +19,61 @@
                 <h2> A revolução do Google está chegando </h2>
             </hgroup>
 
-            <img id="icone" src="img/foto_google_glass_pequena.png" width="180" height="120" />
+            <img id="icone" src="img/glass-oculos-preto-peq.png" width="180" height="120" />
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li onmousemove="mudaFoto('img/home1.png')" onmouseout="mudaFoto('img/foto_google_glass_pequena.png')" ><a href="index.html">Home</a></li>
-                    <li><a href="especificacoes.html">Especificações</a></li>
-                    <li><a href="fotos.html">Fotos</a></li>
-                    <li><a href="multimidia.html">Multimidia</a></li>
-                    <li><a href="faleConosco.html">Fale com a gente</a></li>
+                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="index.html">Home</a></li>
+                    <li onmousemove="mudaFoto('img/especificacoes.png')" onmouseout="mudaFoto('img/foto_google_glass_pequena.png')" ><a href="especificacoes.html">Especificações</a></li>
+                    <li onmousemove="mudaFoto ('img/fotos.png')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="fotos.html">Fotos</a></li>
+                    <li  onmousemove="mudaFoto('img/multimidia.pnge')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="multimidia.html">Multimidia</a></li>
+                    <li  onmousemove="mudaFoto('img/faleconosco.png')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="faleConosco.html">Fale com a gente</a></li>
                 </ul>
             </nav>
         </header>
+        
+
+Fale Conosco > Contato
+Formulário de Contato
+por Gustavo Guanabara
+Atualizado em 01/Maio/2013
+
+Identificação do Usuário
+    Nome:
+    Senha:
+    E-mail:
+    Sexo:
+        - Masculino
+        - Feminino
+    Data de Nascimento:
+
+Endereço do Usuário
+    Logradouro:
+    Número:
+    Estado:
+    Cidade:
+
+Mensagem do Usuário
+    Grau de Urgência:
+    Mensagem:
+
+Quero um Google Glass
+    Gostaria de adquirir um Google Glass quando disponível
+    Cor:
+    Quantidade:
+    Preço Total: R$
+
+
+[BOTÃO ENVIAR]
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2019 - by Diego Bentes <br>
+                <a href="https://pt-br.facebook.com/googleglassapp/" target="blank">Facebook</a>
+                <!-- Target serve pra fazer os link abrir em outra pagina da web, não na mesma --> |
+                <a href="https://twitter.com/withgoogleglass?lang=pt" target="blank">Twitter</a> </p>
+            <!-- Target serve pra fazer os link abrir em outra pagina da web, não na mesma -->
+        </footer>
+
     </div>
 </body>
 </html>
