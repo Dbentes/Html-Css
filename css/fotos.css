@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+ul#albumfotos {
+    width: 700px; /*Largura */
+    margin: 0, auto; /*zero na esquerda, automatica para as outras areas */
+    padding: 80px;
+    overflow: hidden;
+    list-style: none; /*Pra tirar os estilos os pontos das listas*/
+}
+
+ul#albumfotos li {
+    float: left; /*Pros LI ficarem ao lado do outro e não abaixo um do outro*/
+    width: 200px; /*Largura pra cada um dos ITENS LI*/  
+    height: 200px; /*Altura pra cada um dos ITENS LI*/
+    margin: 10px; /*Margin fora de cada um das caixas */
+    border: 5px solid #ffffff; /*Borda de 5px, Tipo solida, cor da borda  branca */
+    background-color: #ffffff; /*dentro de cada foto um fundo branco*/
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4); /*Um box-Shadow que é o Efeito de sombra, de um 1px de deslocamento lateral, 1px de deslocamento vertical, 3px de espalhamento, uma cor de RGBA cor preta com canal alfa  .4  */
+    -webkit-transition: all .4s ease-in; /*Pra manitorar todos os efeitos usa-se ALL, O tempo que eu quero que essa transição ocorra, o tempo pra ampliar a imagem (Um ponto 4 segundos).4s, Forma do efeito será EASE-IN (ELE cresça amplie suavemente)*/
+}
+
+            /*Formatando a Legenda da foto para que ela não apareça, format cor, text, borda, fundo.*/
+ul#albumfotos li span { 
+    opacity: 0; /*Pra fazer com que a legenda não apareça na foto,*/
+    color: #ffffff; /*cor da fonte branco*/
+    text-shadow: 1px 1px 1px #000000; /*sombra todas de um 1px da cor preta*/
+    background-color: rgba(0,0,0,.3);/*Preto meio transparente*/
+    font-size: 9pt; /*Fonte*/
+    line-height: 370px;  /*Pra fazer com que a legenda desça*/
+    padding: 6px; /*Aumentar a largura do fundo da legenda*/
+}
+                /*Pra Poder ampliar a imagem, Efeito de ZOOM, ao passar mouse por cima da imagem, imagem será ampliada*/
+ul#albumfotos li:hover {
+    -webkit-transform: scale(1.5); /*Pra dá zoom da imagem quando o mouse estiver sobre a foto*/
+
+    /*EFEITO ESTÀ NA ul#albumfotos li*/
+
+    /*Pra da um efeito melhor na hora de ampliar a foto usa-se um -webkit-transition: all .4s ease-in; /*Pra manitorar todos os efeitos usa-se ALL, O tempo que eu quero que essa transição ocorra, o tempo pra ampliar a imagem (Um ponto 4 segundos).4s, Forma do efeito será EASE-IN (ELE cresça amplie suavemente)*/*/
+}
+
+
+         /*Format Legenda pra quando passar o mouse por cima das fotos a legenda apareça, apenas quando se passar o mouse por cima*/
+ul#albumfotos li:hover span {
+    opacity: 1; /*Pra fazer a legenda aparecer quando o mouse estiver sobre a foto*/
+}   
+
+ul#albumfotos li#foto01 {
+    background: url('../img/galeria-01.jpg') no-repeat; /*Vou querer que o background dele seja uma URL, que é o arquivo que esta na pasta anterior e na pasta imagens como o nome galeria-01.jpg, e não quero que a foto repita*/
+    background-position: 50% 50%; /*50% na lateral e 50% na vertical, esse background-position é pra mudar o posicionamento da imagem, pra fazer com que o meio da imagem apareça*/
+    background-size: 400px 400px; /*Tamanho da imagem de fundo 400px por 400px, tamanho original*/
+    background-color: #ffffff; /*Branco cor*/
+}
+
+ul#albumfotos li#foto02 {
+    background: url('../img/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%; /*50% na lateral e 50% na vertical, esse background-position é pra mudar o posicionamento da imagem, pra fazer com que o meio da imagem apareça*/
+    background-size: 400px 400px; /*Tamanho da imagem de fundo 400px por 400px, tamanho original*/
+    background-color: #ffffff; /*Branco cor*/
+}
+
+ul#albumfotos li#foto03 {
+    background: url('../img/galeria-03.jpg') no-repeat;
+    background-position: 50% 50%; /*50% na lateral e 50% na vertical, esse background-position é pra mudar o posicionamento da imagem, pra fazer com que o meio da imagem apareça*/
+    background-size: 400px 400px; /*Tamanho da imagem de fundo 400px por 400px, tamanho original*/
+    background-color: #ffffff; /*Branco cor*/
+}
+
+ul#albumfotos li#foto04 {
+    background: url('../img/galeria-04.jpg') no-repeat;
+    background-position: 50% 50%; /*50% na lateral e 50% na vertical, esse background-position é pra mudar o posicionamento da imagem, pra fazer com que o meio da imagem apareça*/
+    background-size: 400px 400px; /*Tamanho da imagem de fundo 400px por 400px, tamanho original*/
+    background-color: #ffffff; /*Branco cor*/
+}
+
+ul#albumfotos li#foto05 {
+    background: url('../img/galeria-05.jpg') no-repeat;
+    background-position: 50% 50%; /*50% na lateral e 50% na vertical, esse background-position é pra mudar o posicionamento da imagem, pra fazer com que o meio da imagem apareça*/
+    background-size: 400px 400px; /*Tamanho da imagem de fundo 400px por 400px, tamanho original*/
+    background-color: #ffffff; /*Branco cor*/
+}
+
+ul#albumfotos li#foto06 {
+    background: url('../img/galeria-06.jpg') no-repeat;
+    background-position: 50% 50%; /*50% na lateral e 50% na vertical, esse background-position é pra mudar o posicionamento da imagem, pra fazer com que o meio da imagem apareça*/
+    background-size: 400px 400px; /*Tamanho da imagem de fundo 400px por 400px, tamanho original*/
+    background-color: #ffffff; /*Branco cor*/
+}
+
+                /*EFEITO DE ZOOM*/ /*Hover*/
+
+ ul#albumfotos li#foto01:hover {
+    background-position: 0px 0px; /*Quando eu passar o mouse sobre a primeira imagem vou gerar background-position de 0px, por 0px, ele vai voltar a mostrar a parte de cima da tela,*/
+    background-size: 200px 200px; /*E o meu background-size vai voltar a 200px por 200px*/
+}
+
+ul#albumfotos li#foto02:hover {
+    background-position: 0px 0px; /*Quando eu passar o mouse sobre a primeira imagem vou gerar background-position de 0px, por 0px, ele vai voltar a mostrar a parte de cima da tela,*/
+    background-size: 200px 200px; /*E o meu background-size vai voltar a 200px por 200px*/
+}
+
+ul#albumfotos li#foto03:hover {
+    background-position: 0px 0px; /*Quando eu passar o mouse sobre a primeira imagem vou gerar background-position de 0px, por 0px, ele vai voltar a mostrar a parte de cima da tela,*/
+    background-size: 200px 200px; /*E o meu background-size vai voltar a 200px por 200px*/
+}
+
+ul#albumfotos li#foto04:hover {
+    background-position: 0px 0px; /*Quando eu passar o mouse sobre a primeira imagem vou gerar background-position de 0px, por 0px, ele vai voltar a mostrar a parte de cima da tela,*/
+    background-size: 200px 200px; /*E o meu background-size vai voltar a 200px por 200px*/
+}
+
+ul#albumfotos li#foto05:hover {
+    background-position: 0px 0px; /*Quando eu passar o mouse sobre a primeira imagem vou gerar background-position de 0px, por 0px, ele vai voltar a mostrar a parte de cima da tela,*/
+    background-size: 200px 200px; /*E o meu background-size vai voltar a 200px por 200px*/
+}
+
+ul#albumfotos li#foto06:hover {
+    background-position: 0px 0px; /*Quando eu passar o mouse sobre a primeira imagem vou gerar background-position de 0px, por 0px, ele vai voltar a mostrar a parte de cima da tela,*/
+    background-size: 200px 200px; /*E o meu background-size vai voltar a 200px por 200px*/
+}
