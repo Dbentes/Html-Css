@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DB-Tudo Sobre GOOGLE Glass</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
-<script language="javaScript" src="javaScript/funcoes.js"></script> 
+<script language="javaScript" src="javaScript/funcoes.js"></script>
 
 <body>
     <div id="interface">
@@ -19,29 +20,49 @@
                 <h2> A revolução do Google está chegando </h2>
             </hgroup>
 
-            <img id="icone" src="img/glass-oculos-preto-peq.png" width="180" height="120" />
+            <img id="icone" src="img/multimidia.pnge" width="180" height="120" />
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="index.html">Home</a></li>
-                    <li onmousemove="mudaFoto('img/especificacoes.png')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="especificacoes.html">Especificações</a></li>
-                    <li onmousemove="mudaFoto ('img/fotos.png')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="fotos.html">Fotos</a></li>
-                    <li  onmousemove="mudaFoto('img/multimidia.pnge')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="multimidia.html">Multimidia</a></li>
-                    <li  onmousemove="mudaFoto('img/faleconosco.png')" onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="faleConosco.html">Fale com a gente</a></li>
+                    <li onmousemove="mudaFoto('img/home.png')" onmouseout="mudaFoto('img/multimidia.pnge')"><a
+                            href="index.html">Home</a></li>
+                    <li onmousemove="mudaFoto('img/especificacoes.png')" onmouseout="mudaFoto('img/multimidia.pnge')"><a
+                            href="especificacoes.html">Especificações</a></li>
+                    <li onmousemove="mudaFoto ('img/fotos.png')" onmouseout="mudaFoto('img/multimidia.pnge')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmousemove="mudaFoto('img/multimidia.pnge')" onmouseout="mudaFoto('img/multimidia.pnge')"><a
+                            href="multimidia.html">Multimidia</a></li>
+                    <li onmousemove="mudaFoto('img/faleconosco.png')" onmouseout="mudaFoto('img/multimidia.pnge')"><a
+                            href="faleConosco.html">Fale com a gente</a></li>
                 </ul>
             </nav>
         </header>
 
-        Glass > Multimídia
-        Sons e Vídeos
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
+        <section id="corpoFull ">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Multimídia</h3>
+                        <h1> Sons e Vídeos do Google Glass</h1>
+                        <h2>por Diego Bentes</h2>
+                        <h3 class="direita">Atualizado em 19/agosto/2019</h3>
+                    </hgroup>
+                </header>
 
 
-        Áudio e Vídeo
-
-        [AQUI ENTRA UM VÍDEO]
-        [AQUI ENTRA UM ÁUDIO]
+                <div id="tv-radio">
+                    <audio id="musica" controls="controls">
+                        <source src="media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+                        Desculpe, mas não foi possivel carregar o áudio.
+                    </audio>
+                    <video id="filme" controls="controls" poster="img/video-mini03.jpg">
+                        <source src= "media/getting-started.mp4" type="video/mp4"/>
+                        Desculpe, mas não foi possível carregar o vídeo.
+                    </video>
+                </div>
+               
+            </article>
+        </section>
 
         <footer id="rodape">
             <p>Copyright &copy; 2019 - by Diego Bentes <br>
@@ -50,7 +71,6 @@
                 <a href="https://twitter.com/withgoogleglass?lang=pt" target="blank">Twitter</a> </p>
             <!-- Target serve pra fazer os link abrir em outra pagina da web, não na mesma -->
         </footer>
-
     </div>
 </body>
 </html>
