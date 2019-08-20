@@ -1,3 +1,61 @@
 @charset "UTF-8";
 
-/*PAREI NA AULA  Curso de HTML5 - 33 - Formulários em HTML5 (parte 1) - by Gustavo Guanabara 10:20  */
+form {
+    width: 500px; /*Largura*/
+    margin: auto; /*Margin automatica pra ficar centralizado*/
+}
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(248, 239, 239, 0.8);
+}
+
+/*Quando passar o mouse por cima das caixas mudar a cor do FUNDO*/
+
+input:hover, textarea:hover { 
+    background-color: #dddddd;
+}
+
+/*Formatando os Legends {Legenda dos campos}*/
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+/*Formatando os Fieldset: QUE São as BORDAS do FORM*/
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#sexo {
+    width: 150px;
+}
+/*Imagem no fundo de cada Fieldset, usando o Id deles*/
+
+fieldset#usuario {
+    background: url("../img/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+    background: url("../img/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+    background: url("../img/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#pedido {
+    background: url("../img/icone-pagamento.png") no-repeat 95% 95%;
+}
+
+@media screen and (min-device-width:220px) {
+    .menu {
+        width: 100%;
+    }
+}
