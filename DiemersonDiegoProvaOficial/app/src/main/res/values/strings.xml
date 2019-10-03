@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DiemersonDiegoProvaOficial</string>
+    <string name="usuario">Usuario</string>
+    <string name="senha">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="title_activity_tela2">Tela2</string>
+
+</resources>
